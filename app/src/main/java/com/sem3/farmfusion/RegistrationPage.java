@@ -11,7 +11,6 @@ Toolbar toolbar ;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration_page);
-      //  toolbar = findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
+
     }
 }

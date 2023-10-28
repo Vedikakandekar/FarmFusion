@@ -12,16 +12,5 @@
 
 
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">@color/black</item>
-        <item name="colorPrimaryDark">@color/black</item>
-        <item name="colorAccent">@color/prime1</item>
-        <item name="android:windowTranslucentStatus">true</item>
 
-        <item name="android:textColorHint">@color/black</item>
-        <item name="colorControlNormal">@color/black</item>
-        <item name="colorControlActivated">#ff0000</item>
-        <item name="colorControlHighlight">@color/black</item>
-        <!-- Customize your theme here. -->
-    </style>
 </resources>

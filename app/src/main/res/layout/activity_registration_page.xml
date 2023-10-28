@@ -10,24 +10,21 @@
     tools:context=".RegistrationPage"
     android:background="@color/loginBack"
     android:orientation="vertical"
-
+    android:maxWidth="488dp"
+    android:minWidth="88dp"
     >
-
-
-
-
-
 
         <TextView
             android:id="@+id/TV_registerPage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:padding="10sp"
+            android:padding="10dp"
             android:text="@string/registration"
             android:textColor="@color/black"
             android:shadowColor="#000000"
-            android:textSize="40dp"
+            android:textSize="40sp"
+            android:layout_marginTop="20dp"
             >
 
         </TextView>
@@ -41,6 +38,10 @@
             android:layout_marginHorizontal="10dp"
             android:layout_marginTop="20sp"
             app:boxStrokeColor="@color/prime1"
+            app:counterEnabled="true"
+            app:counterMaxLength="50"
+            android:maxWidth="488dp"
+            android:minWidth="88dp"
             app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -65,7 +66,10 @@
             android:layout_marginHorizontal="10dp"
             app:boxStrokeColor="@color/prime1"
             app:endIconMode="clear_text"
-
+            android:maxWidth="488dp"
+            app:counterEnabled="true"
+            app:counterMaxLength="100"
+            android:minWidth="88dp"
             >
 
             <com.google.android.material.textfield.TextInputEditText
@@ -87,18 +91,22 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:maxWidth="488dp"
+        android:minWidth="88dp"
         android:layout_marginHorizontal="10dp"
         app:boxStrokeColor="@color/prime1"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
         app:endIconMode="clear_text">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/ET_cont"
+            android:id="@+id/ET_mobile_no"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableEnd="@drawable/ic_phone_no"
             android:hint="@string/mobile_number"
             android:inputType="phone"
+
             android:textColor="@color/prime1"
             android:textSize="18sp">
 
@@ -111,19 +119,23 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:maxWidth="488dp"
+            android:minWidth="88dp"
             android:layout_marginHorizontal="10dp"
             app:boxStrokeColor="@color/prime1"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
             app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/ET_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
+                android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/prime1"
                 android:textSize="18sp"
+
                 android:drawableEnd="@drawable/ic_email"
                 >
             </com.google.android.material.textfield.TextInputEditText>
@@ -138,13 +150,17 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
             app:boxStrokeColor="@color/prime1"
+            app:counterEnabled="true"
+            app:counterMaxLength="6"
+            android:maxWidth="488dp"
+            android:minWidth="88dp"
             app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/ET_pass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
+                android:hint="@string/password"
                 android:inputType="textPassword"
                 android:textColor="@color/prime1"
                 android:textSize="18sp"
@@ -160,14 +176,12 @@
             android:id="@+id/submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_gravity="center_horizontal"
-            android:text="Register"
+            android:text="@string/register"
             android:textColor="@color/black"
             style="@style/MaterialButtonStyle"
-            android:textSize="18dp">
-
+            android:textSize="18sp">
         </Button>
 
 
