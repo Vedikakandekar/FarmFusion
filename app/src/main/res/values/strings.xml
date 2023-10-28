@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FarmFusion</string>
+    <string name="title_activity_login_page">LoginPage</string>
+    <string name="login">Login</string>
+    <string name="email_id">Email ID</string>
+    <string name="password">Password</string>
+    <string name="registration">Registration</string>
+    <string name="name">Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="address">Address</string>
+</resources>
