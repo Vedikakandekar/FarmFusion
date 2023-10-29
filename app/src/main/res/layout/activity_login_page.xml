@@ -24,12 +24,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:padding="10sp"
+            android:padding="10dp"
             android:text="@string/login"
             android:textColor="@color/black"
-            android:textSize="40dp"
+            android:textSize="40sp"
             android:shadowColor="#000000"
-            android:onClick="clicked"
             >
 
         </TextView>
@@ -43,6 +42,7 @@
             android:layout_marginHorizontal="10dp"
             android:layout_marginTop="10sp"
             app:boxStrokeColor="@color/prime1"
+            android:id="@+id/IL_email_login"
             app:endIconMode="clear_text">
 
 
@@ -93,15 +93,14 @@
             android:id="@+id/btn_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:layout_gravity="center_horizontal"
           style="@style/MaterialButtonStyle"
 
-            android:text="Login"
+            android:text="@string/login"
             android:textColor="@color/black"
             android:background="@color/submitButton"
-            android:textSize="18dp">
+            android:textSize="18sp">
 
         </Button>
 
@@ -109,14 +108,13 @@
             android:id="@+id/TV_register"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_below="@+id/loginButton"
-            android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
             android:clickable="true"
             android:gravity="center"
-            android:text="Don't have Account? Register"
+            android:text="@string/don_t_have_account_register"
             android:textColor="@color/black"
+            android:focusable="true"
             android:textSize="16sp"
             android:textStyle="bold" />
 
