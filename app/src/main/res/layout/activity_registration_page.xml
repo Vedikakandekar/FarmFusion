@@ -12,6 +12,7 @@
     android:orientation="vertical"
     android:maxWidth="488dp"
     android:minWidth="88dp"
+
     >
 
         <TextView
@@ -42,6 +43,7 @@
             app:counterMaxLength="50"
             android:maxWidth="488dp"
             android:minWidth="88dp"
+            android:id="@+id/IL_name"
             app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -70,10 +72,11 @@
             app:counterEnabled="true"
             app:counterMaxLength="100"
             android:minWidth="88dp"
+
             >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/ET_addr"
+                android:id="@+id/ET_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/address"
@@ -97,7 +100,9 @@
         app:boxStrokeColor="@color/prime1"
         app:counterEnabled="true"
         app:counterMaxLength="10"
-        app:endIconMode="clear_text">
+        app:endIconMode="clear_text"
+        android:id="@+id/IL_mobile_no"
+        >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/ET_mobile_no"
@@ -106,7 +111,6 @@
             android:drawableEnd="@drawable/ic_phone_no"
             android:hint="@string/mobile_number"
             android:inputType="phone"
-
             android:textColor="@color/prime1"
             android:textSize="18sp">
 
@@ -125,6 +129,7 @@
             app:boxStrokeColor="@color/prime1"
             app:counterEnabled="true"
             app:counterMaxLength="30"
+            android:id="@+id/IL_email"
             app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -154,10 +159,11 @@
             app:counterMaxLength="6"
             android:maxWidth="488dp"
             android:minWidth="88dp"
+            android:id="@+id/IL_password"
             app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/ET_pass"
+                android:id="@+id/ET_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/password"
@@ -173,7 +179,7 @@
 
 
         <Button
-            android:id="@+id/submit"
+            android:id="@+id/BTN_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
