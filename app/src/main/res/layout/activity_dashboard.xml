@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginBack"
+    tools:context=".Dashboard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_app_bar_layout"
+        android:elevation="10dp"
+        android:background="#F7EFE5"
+        android:padding="5dp"
+        >
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_dashboard_menu"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/menu"
+            android:layout_alignParentStart="true"
+            android:id="@+id/IB_top_bar_menu"
+            android:background="#F7EFE5"
+            android:foregroundGravity="center"
+            >
+
+        </ImageButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/page_title"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:id="@+id/TV_page_name"
+            android:elevation="10dp"
+            >
+        </TextView>
+
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btm_navig_view"
+        android:layout_below="@id/top_app_bar_layout"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/btm_navig_menu"
+            android:id="@+id/btm_navig_view"
+            >
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </RelativeLayout>
+
+

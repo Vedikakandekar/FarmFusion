@@ -10,4 +10,20 @@
     <string name="address">Address</string>
     <string name="email">Email</string>
     <string name="register">Register</string>
+    <string name="don_t_have_account_register">Don\'t have Account? Register</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="history">History</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="healthify_crop">Healthify Crop</string>
+    <string name="fertilizer_calculator">Fertilizer Calculator</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="community">Community</string>
+    <string name="menu">Menu</string>
+    <string name="page_title">Page Title</string>
+    <string name="community_fragment">Community Fragment</string>
+    <string name="home_fragment">Home Fragment</string>
+    <string name="healthify_plant">Healthify Plant</string>
+    <string name="fertilizer_calculator_fragment">Fertilizer Calculator Fragment</string>
 </resources>

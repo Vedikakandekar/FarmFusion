@@ -14,6 +14,7 @@
     <color name="hintcolor">#582F0E</color>
     <color name="loginBack">#F9F6F2</color>
     <color name="submitButton">#EBD5D5</color>
+    <color name="iconColor">#7BA074</color>
 
 </resources>
 
