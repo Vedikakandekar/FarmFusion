@@ -98,13 +98,17 @@ public class LoginPage extends AppCompatActivity {
                         timestampData = (Map<String, String>) timestamp.getValue();
                     }
                     String password = timestampData.get("password");
-                    if(password.equals(str_pass))
-                        Toast.makeText(LoginPage.this, "Logged IN", Toast.LENGTH_SHORT).show();
+                    if(password.equals(str_pass)) {
+                        Intent intent = new Intent(LoginPage.this, Dashboard.class);
+                        intent.putExtra("email",str_email);
+                        startActivity(intent);
+                    }
+
                     else
-                        Toast.makeText(LoginPage.this, "Invalid", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginPage.this, "Invalid Email OR Password...!!Try Again", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    Toast.makeText(LoginPage.this, "Not registered", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginPage.this, "Not Registered", Toast.LENGTH_SHORT).show();
                 }
             }
 

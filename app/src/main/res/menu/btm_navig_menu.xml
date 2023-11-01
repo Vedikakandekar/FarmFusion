@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/ic_home"
+        android:id="@+id/dashboard"
+        android:title="@string/home"
+        >
+    </item>
+
+    <item
+        android:icon="@drawable/ic_plant"
+        android:id="@+id/take_pic"
+        android:title="@string/healthify_crop"
+        >
+    </item>
+
+    <item
+        android:icon="@drawable/ic_fertilizer"
+        android:id="@+id/fertilizer_calculator"
+        android:title="@string/fertilizer_calculator"
+        >
+    </item>
+
+    <item
+        android:icon="@drawable/ic_community2"
+        android:id="@+id/community"
+        android:title="@string/community"
+        >
+    </item>
+
+</menu>
