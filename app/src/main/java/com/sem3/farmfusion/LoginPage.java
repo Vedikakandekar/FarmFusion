@@ -3,7 +3,9 @@ package com.sem3.farmfusion;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -25,6 +27,8 @@ public class LoginPage extends AppCompatActivity {
  TextInputLayout IL_email;
  TextView TV_register;
  Button btn_login;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -83,8 +87,8 @@ public class LoginPage extends AppCompatActivity {
         String str_email, str_pass;
         str_email = ET_emailID.getText().toString();
         str_pass = ET_pass.getText().toString();
-        DAO ref = new DAO();
-        DatabaseReference user = ref.getDatabaseReference("User");
+
+        DatabaseReference user = DAO.getUserDatabaseReference();
 
 
 
@@ -99,8 +103,12 @@ public class LoginPage extends AppCompatActivity {
                     }
                     String password = timestampData.get("password");
                     if(password.equals(str_pass)) {
+                        SharedPreferences sharedPreferences = getSharedPreferences("UserData", Context.MODE_PRIVATE);
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.putString("userEmail", str_email);
+                        editor.putString("userName",timestampData.get("name") );
+                        editor.apply();
                         Intent intent = new Intent(LoginPage.this, Dashboard.class);
-                        intent.putExtra("email",str_email);
                         startActivity(intent);
                     }
 

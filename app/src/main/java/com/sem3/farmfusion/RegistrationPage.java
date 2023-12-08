@@ -117,8 +117,8 @@ Button BTN_register;
         if(!str_name.isEmpty() && !str_address.isEmpty() && !str_mobile_no.isEmpty() && !str_email.isEmpty() && !str_password.isEmpty())
         {
             User NewUser = new User(str_name,str_address,str_mobile_no,str_email,str_password);
-            DAO ref = new DAO();
-           DatabaseReference user =  ref.getDatabaseReference("User");
+
+           DatabaseReference user =  DAO.getUserDatabaseReference();
             user.orderByChild("Email").equalTo(str_email).addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {

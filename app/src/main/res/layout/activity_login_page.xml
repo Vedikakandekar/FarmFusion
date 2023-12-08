@@ -91,15 +91,16 @@
 
         <Button
             android:id="@+id/btn_login"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_gravity="center_horizontal"
-          style="@style/MaterialButtonStyle"
-
+            android:focusable="true"
+            android:elevation="30dp"
+            android:clickable="true"
+            android:layout_marginHorizontal="100dp"
             android:text="@string/login"
             android:textColor="@color/black"
-            android:background="@color/submitButton"
             android:textSize="18sp">
 
         </Button>
@@ -114,6 +115,7 @@
             android:gravity="center"
             android:text="@string/don_t_have_account_register"
             android:textColor="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:focusable="true"
             android:textSize="16sp"
             android:textStyle="bold" />
