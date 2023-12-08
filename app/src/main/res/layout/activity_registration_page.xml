@@ -180,13 +180,15 @@
 
         <Button
             android:id="@+id/BTN_register"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="50dp"
             android:text="@string/register"
+            android:focusable="true"
+            android:elevation="10dp"
             android:textColor="@color/black"
-            style="@style/MaterialButtonStyle"
             android:textSize="18sp">
         </Button>
 

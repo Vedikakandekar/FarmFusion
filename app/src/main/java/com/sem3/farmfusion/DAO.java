@@ -7,9 +7,13 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class DAO {
 
-    public DatabaseReference getDatabaseReference(String db)
+    public static DatabaseReference getUserDatabaseReference()
     {
-        return FirebaseDatabase.getInstance().getReference(db);
+        return FirebaseDatabase.getInstance().getReference("User");
     }
 
+    public static DatabaseReference getPostsDatabaseReference()
+    {
+        return FirebaseDatabase.getInstance().getReference("Posts");
+    }
 }

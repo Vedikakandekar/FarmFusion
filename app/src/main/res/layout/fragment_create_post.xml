@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="30dp"
+    android:background="#F1EFEF"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:outlineProvider="paddedBounds"
+    tools:context=".CreatePostFragment">
+
+
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:layout_gravity="center_horizontal"
+    android:focusable="true"
+    android:textColor="@color/black"
+    android:layout_marginVertical="10dp"
+    android:padding="5dp"
+    android:id="@+id/TV_fragHeading"
+    ></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:focusable="true"
+            android:layout_height="match_parent"
+            android:id="@+id/ET_crop_name"
+            android:textColor="@color/black"
+            android:hint="Enter Crop Name"
+            android:visibility="gone"
+            android:inputType="text">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="10dp"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ET_post_Description"
+            android:hint="Enter Content of your Post"
+            android:focusable="true"
+            android:scrollbars="vertical"
+            android:maxLines="30"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:inputType="textMultiLine">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:id="@+id/btn_upload_crop_img"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/submitButton"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:visibility="gone"
+        android:focusable="true"
+        android:elevation="5dp"
+        >
+
+    </Button>
+
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:id="@+id/imgview"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        >
+
+    </ImageView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:id="@+id/btn_add_post"
+        android:layout_marginHorizontal="20dp"
+        >
+
+    </Button>
+
+
+</LinearLayout>
